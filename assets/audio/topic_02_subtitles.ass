@@ -1,0 +1,20 @@
+[Script Info]
+Title: TikTok Viral Subtitles - KOL Nhun Nhun
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTokYellow,Liberation Sans,68,&H0000FFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,6,3,2,50,50,380,1
+Style: TikTokWhite,Liberation Sans,68,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,6,3,2,50,50,380,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:06.69,TikTokYellow,,0,0,0,,Cứ mỗi tối Chủ nhật là em tự hứa với lòng: 'Thứ Hai\Ntuần này nhất định mình phải ăn uống healthy để lấy lại vóc dáng!'
+Dialogue: 0,0:00:06.64,0:00:10.07,TikTokWhite,,0,0,0,,Nhưng mà mấy bà biết không,\Ncái thứ Hai nó lạ lắm!
+Dialogue: 0,0:00:10.07,0:00:15.49,TikTokYellow,,0,0,0,,Vừa mở mắt ra đi làm một cái là trà sữa\Nfull topping nó tự nhảy vào giỏ hàng hồi nào không hay!
+Dialogue: 0,0:00:15.49,0:00:18.14,TikTokWhite,,0,0,0,,Ai có cái nết\Ngiảm cân giống em hông?
