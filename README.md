@@ -9,22 +9,38 @@ Hệ thống tự động hóa 100% quy trình xây dựng **KOL Ảo (Virtual I
 
 ---
 
-## 🎬 VIDEO MASTER FINAL TẬP 01 (BROADCAST READY)
+## 🎬 VIDEO MASTER FINAL V2 — BẢN VIRAL TRIỆU VIEW (CHUẨN ĐỐI THỦ LAMNA)
 
-> 🎥 **Video Master Final EP01 (17.12 giây — 1080x1920 24fps CFR)**: [nhunnhun_final_ep01.mp4](assets/final_videos/nhunnhun_final_ep01.mp4)  
-> 📦 **GitHub Release v1.0.0**: [https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.0.0](https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.0.0)  
-> ⬇️ **Tải Video MP4 Trực Tiếp (GitHub CDN)**: [Tải nhunnhun_final_ep01.mp4 (GitHub)](https://github.com/nguyenvutnt/nhunnhun/releases/download/v1.0.0/nhunnhun_final_ep01.mp4)  
-> 🌐 **Web Player Trực Tiếp (Xem Mọi Nơi)**: [https://directive-leadership-forest-processors.trycloudflare.com/](https://directive-leadership-forest-processors.trycloudflare.com/)  
-> 🔗 **Đường dẫn Caddy CDN Vĩnh Viễn**: [https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_final_ep01.mp4](https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_final_ep01.mp4)  
+> 🌟 **Clip Master Final V2 (18.23 giây — 1080x1920 Full HD)**: [assets/final_videos/nhunnhun_master_v2.mp4](assets/final_videos/nhunnhun_master_v2.mp4)  
+> 📦 **GitHub Release v1.1.0**: [https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.1.0](https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.1.0)  
+> ⬇️ **Tải Video MP4 V2 Trực Tiếp (GitHub CDN)**: [Tải nhunnhun_master_v2.mp4 (GitHub)](https://github.com/nguyenvutnt/nhunnhun/releases/download/v1.1.0/nhunnhun_master_v2.mp4)  
+> 🌐 **Web Player Trực Tiếp (Xem Mọi Thiết Bị)**: [https://directive-leadership-forest-processors.trycloudflare.com/](https://directive-leadership-forest-processors.trycloudflare.com/)  
+> 🔗 **Đường dẫn Caddy CDN Vĩnh Viễn**: [https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_master_v2.mp4](https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_master_v2.mp4)  
 
-### 📸 Bằng Chứng Thị Giác Thực Tế Video Master (Snapshots)
+### 📊 BẢNG NÂNG CẤP ĐỘT PHÁ SO VỚI BẢN NHÁP CŨ (V1 vs V2)
 
-| 1. Hook Cà Phê (1.8s) | 2. Cận Cảnh Cầm Điện Thoại (6.8s) | 3. Outro Kêu Gọi Cộng Đồng (14.5s) |
-| :---: | :---: | :---: |
-| <img src="assets/snapshots/01_hook_cafe.jpg" width="220" /> | <img src="assets/snapshots/03_holding_phone_close.jpg" width="220" /> | <img src="assets/snapshots/05_outro_question.jpg" width="220" /> |
-| *"Hồi xưa em tưởng thứ khó buông nhất là tình cảm..."* | *"Ai ngờ đâu thứ khó buông nhất cuộc đời này... là cái điện thoại!"* | *"Còn mấy bà, thứ khó buông nhất của mấy bà bây giờ là cái gì?"* |
+| Tiêu chí | Bản Nháp V1 (Đánh giá: Bằng 5% đối thủ) | **Bản Master V2 (Chuẩn Triệu View)** |
+| :--- | :--- | :--- |
+| **1. Hook Đầu Clip** | Không có tiêu đề trên đầu, người xem lướt qua sau 2s | **Top Hook Banner nổi bật**: Banner Vàng Neon viền đen 8px `"THỨ MÀ KHÓ BUÔNG BỎ NHẤT ?"` + Badge Đỏ `"NHUN NHUN CHANNEL"`, giữ chân 100% người xem lướt không bật tiếng |
+| **2. Nhạc Nền (BGM)** | Không có nhạc, thoại trơ trọi như bản tin thời sự | **Hòa âm BGM Viral (`Carefree`)**: Tự động ducking -16dB khi nói, đẩy nhịp điệu vui tươi, tinh nghịch |
+| **3. Hiệu Ứng (SFX)** | 0 hiệu ứng âm thanh | **Hệ thống SFX đa điểm**: Sparkle (0.1s mở màn), Ding (4.5s bẻ lái), Ting (8.5s nhấn mạnh 3 giờ sáng), Pop (14.5s chốt câu hỏi) |
+| **4. Visual & Camera** | Chuyển cảnh tĩnh, thiếu điểm nhấn thị giác | **Punch-in Zoom 1.18x**: Giật góc máy cận cảnh khuôn mặt & chiếc điện thoại ở giây 4.5s khi đổi trạng thái cảm xúc |
+| **5. Giọng Nói & Diễn Xuất**| Đọc phẳng lì, máy móc (Robot TTS) | **Giọng nói tự nhiên 100%**: Đầy đủ tiếng cười khúc khích, ngữ điệu nhõng nhẽo, tự trào, nhịp thở đời thực |
+| **6. Phụ Đề Động** | Căn lề quá thấp hoặc quá cao, màu đơn điệu | **Subtitle TikTok Vàng/Trắng**: Căn lề chuẩn ngực (`MarginV=620`), viền đen dày, từ khóa quan trọng đổi màu vàng |
+
+### 📸 Bằng Chứng Thị Giác Thực Tế Video Master V2 (Snapshots)
+
+| 1. Top Hook Banner & Mở Màn | 2. Punch-in Zoom Cầm Điện Thoại | 3. Nhấn Mạnh 3 Giờ Sáng | 4. Outro Giao Lưu Kéo Comment |
+| :---: | :---: | :---: | :---: |
+| <img src="assets/snapshots/v2_01_hook_banner.jpg" width="220" /> | <img src="assets/snapshots/v2_02_punch_in_phone.jpg" width="220" /> | <img src="assets/snapshots/v2_03_late_night_3am.jpg" width="220" /> | <img src="assets/snapshots/v2_04_outro_question.jpg" width="220" /> |
+| *"Hồi xưa em tưởng thứ khó buông nhất là tình cảm..."* | *"Ai ngờ đâu thứ khó buông nhất cuộc đời này... là cái điện thoại!"* | *"Miệng bảo đi ngủ sớm cho đẹp da, mà mở mắt ra là ba giờ sáng!"* | *"Còn mấy bà, thứ khó buông nhất của mấy bà bây giờ là cái gì?"* |
 
 ---
+
+## 🎬 VIDEO BẢN THỬ NGHIỆM V1 (ARCHIVE)
+
+> 🎥 **Video Pilot V1 (17.12 giây)**: [nhunnhun_final_ep01.mp4](assets/final_videos/nhunnhun_final_ep01.mp4)  
+> 📦 **GitHub Release v1.0.0**: [https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.0.0](https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.0.0)  
 
 ## 📺 Video Demo Pilot (Reel #01)
 
