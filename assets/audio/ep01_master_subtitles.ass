@@ -1,0 +1,20 @@
+[Script Info]
+Title: TikTok Viral Subtitles - KOL Nhun Nhun EP01
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTokYellow,Liberation Sans,68,&H0000FFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,6,3,2,60,60,380,1
+Style: TikTokWhite,Liberation Sans,68,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,6,3,2,60,60,380,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:04.93,TikTokYellow,,0,0,0,,Hồi xưa em tưởng thứ khó buông nhất là\Ntình cảm, chia tay là khóc mấy ngày mấy đêm!
+Dialogue: 0,0:00:04.93,0:00:08.70,TikTokWhite,,0,0,0,,Ai ngờ đâu thứ khó buông nhất\Ncuộc đời này... là cái điện thoại!
+Dialogue: 0,0:00:08.70,0:00:13.06,TikTokYellow,,0,0,0,,Miệng bảo đi ngủ sớm cho đẹp da,\Nmà mở mắt ra là ba giờ sáng!
+Dialogue: 0,0:00:13.06,0:00:17.11,TikTokWhite,,0,0,0,,Còn mấy bà, thứ khó buông nhất\Ncủa mấy bà bây giờ là cái gì?

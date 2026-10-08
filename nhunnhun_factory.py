@@ -80,6 +80,7 @@ def build_pilot():
 def main():
     parser = argparse.ArgumentParser(description="Nhà máy nội dung KOL ảo Nhun Nhun")
     parser.add_argument("--pilot", action="store_true", help="Dựng và xuất bản video Pilot")
+    parser.add_argument("--final", action="store_true", help="Dựng và xuất bản video Master Final đầu tiên (EP01)")
     parser.add_argument("--list-topics", action="store_true", help="Hiển thị danh sách các chủ đề viral")
     args = parser.parse_args()
 
@@ -87,6 +88,9 @@ def main():
         for t in TOPICS:
             print(f"[{t['id']}] {t['title']} ({t['category']})")
             print(f"  Script: {t['script']}\n")
+    elif args.final:
+        from scripts.build_final_ep01 import build_final_ep01
+        build_final_ep01()
     else:
         build_pilot()
 

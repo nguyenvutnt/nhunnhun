@@ -9,7 +9,23 @@ Hệ thống tự động hóa 100% quy trình xây dựng **KOL Ảo (Virtual I
 
 ---
 
-## 📺 Video Demo Trực Tiếp (Pilot Reel #01)
+## 🎬 VIDEO MASTER FINAL TẬP 01 (BROADCAST READY)
+
+> 🎥 **Video Master Final EP01 (17.12 giây — 1080x1920 24fps CFR)**: [nhunnhun_final_ep01.mp4](assets/final_videos/nhunnhun_final_ep01.mp4)  
+> 🌐 **Web Player Trực Tiếp (Xem Mọi Nơi)**: [https://directive-leadership-forest-processors.trycloudflare.com/](https://directive-leadership-forest-processors.trycloudflare.com/)  
+> ⬇️ **Tải Video MP4 Trực Tiếp (Cloudflare CDN)**: [Tải nhunnhun_final_ep01.mp4](https://directive-leadership-forest-processors.trycloudflare.com/nhunnhun_final_ep01.mp4)  
+> 🔗 **Đường dẫn Caddy CDN Vĩnh Viễn**: [https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_final_ep01.mp4](https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_final_ep01.mp4)  
+
+### 📸 Bằng Chứng Thị Giác Thực Tế Video Master (Snapshots)
+
+| 1. Hook Cà Phê (1.8s) | 2. Cận Cảnh Cầm Điện Thoại (6.8s) | 3. Outro Kêu Gọi Cộng Đồng (14.5s) |
+| :---: | :---: | :---: |
+| <img src="assets/snapshots/01_hook_cafe.jpg" width="220" /> | <img src="assets/snapshots/03_holding_phone_close.jpg" width="220" /> | <img src="assets/snapshots/05_outro_question.jpg" width="220" /> |
+| *"Hồi xưa em tưởng thứ khó buông nhất là tình cảm..."* | *"Ai ngờ đâu thứ khó buông nhất cuộc đời này... là cái điện thoại!"* | *"Còn mấy bà, thứ khó buông nhất của mấy bà bây giờ là cái gì?"* |
+
+---
+
+## 📺 Video Demo Pilot (Reel #01)
 
 | Phân đoạn | Ảnh chụp thực tế (Full HD) | Lời thoại độc thoại (Script) |
 | :--- | :---: | :--- |
@@ -17,7 +33,7 @@ Hệ thống tự động hóa 100% quy trình xây dựng **KOL Ảo (Virtual I
 | **Twist (5 - 13s)**<br>*Cận cảnh cầm điện thoại cười* | <img src="assets/snapshots/final_7s.jpg" width="220" /> | *"Ai ngờ đâu thứ khó buông nhất cuộc đời này... là cái điện thoại! Miệng bảo đi ngủ sớm cho đẹp da, mà mở mắt ra là ba giờ sáng!"* |
 | **Outro (13 - 17s)**<br>*Giao lưu cộng đồng* | <img src="assets/snapshots/final_15s.jpg" width="220" /> | *"Còn mấy bà, thứ khó buông nhất của mấy bà bây giờ là cái gì?"* |
 
-> 🔗 **Xem trực tiếp video thành phẩm (1080x1920 24fps):**  
+> 🔗 **Xem trực tiếp video pilot:**  
 > [https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_pilot_01.mp4](https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_pilot_01.mp4)
 
 ---
@@ -100,12 +116,17 @@ nhunnhun/
 pip install -r requirements.txt
 ```
 
-### 2. Chạy sản xuất Video Pilot
+### 2. Chạy sản xuất Video Master Final EP01 (Đầy đủ hiệu ứng, căn lề, chuẩn EBU R128)
 ```bash
-python3 nhunnhun_factory.py --pilot
+python3 nhunnhun_factory.py --final
 ```
 
-### 3. Xem danh sách chủ đề nội dung viral
+### 3. Khởi động Web Player & Public Tunnel xem trực tiếp
+```bash
+./start_public_tunnel.sh
+```
+
+### 4. Xem danh sách chủ đề nội dung viral
 ```bash
 python3 nhunnhun_factory.py --list-topics
 ```
