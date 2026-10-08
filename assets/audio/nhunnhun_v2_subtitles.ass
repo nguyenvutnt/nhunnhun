@@ -1,5 +1,5 @@
 [Script Info]
-Title: TikTok Viral Subtitles - KOL Nhun Nhun Master V2
+Title: Nhun Nhun AI Master Subtitles (Clean Voice)
 ScriptType: v4.00+
 WrapStyle: 0
 ScaledBorderAndShadow: yes
@@ -9,16 +9,16 @@ PlayResY: 1920
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: SubWhite,Montserrat ExtraBold,66,&H00FFFFFF,&H000000FF,&H00110500,&H80000000,-1,0,0,0,100,100,0,0,1,6,3,2,60,60,620,1
-Style: SubYellow,Montserrat ExtraBold,68,&H0000FFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,105,105,0,0,1,7,3,2,60,60,620,1
+Style: SubWhite,Montserrat ExtraBold,72,&H00FFFFFF,&H000000FF,&H00110500,&H80000000,-1,0,0,0,100,100,0,0,1,7,3,2,60,60,620,1
+Style: SubYellow,Montserrat ExtraBold,74,&H0000FFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,105,105,0,0,1,8,3,2,60,60,620,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.10,0:00:02.30,SubWhite,,0,0,0,,Hồi xưa em tưởng...
-Dialogue: 0,0:00:02.30,0:00:04.60,SubYellow,,0,0,0,,thứ khó buông bỏ nhất là tình cảm,
-Dialogue: 0,0:00:04.60,0:00:06.80,SubWhite,,0,0,0,,chia tay là khóc mấy ngày mấy đêm!
-Dialogue: 0,0:00:06.80,0:00:09.10,SubWhite,,0,0,0,,Giờ em mới nhận ra...
-Dialogue: 0,0:00:09.10,0:00:11.80,SubYellow,,0,0,0,,thứ khó buông nhất là CÁI ĐIỆN THOẠI!
-Dialogue: 0,0:00:11.80,0:00:14.20,SubYellow,,0,0,0,,Cầm vô một cái là dính tới 3 GIỜ SÁNG luôn!
-Dialogue: 0,0:00:14.20,0:00:16.20,SubWhite,,0,0,0,,Miệng nói bỏ xuống mà tay không buông được!
-Dialogue: 0,0:00:16.20,0:00:18.23,SubYellow,,0,0,0,,Còn mọi người, thứ khó buông nhất của mọi người là gì?
+Dialogue: 0,0:00:00.15,0:00:02.80,SubWhite,,0,0,0,,Hồi xưa á, em tưởng...
+Dialogue: 0,0:00:02.80,0:00:05.10,SubYellow,,0,0,0,,thứ khó buông nhất là TÌNH CẢM!
+Dialogue: 0,0:00:05.15,0:00:07.10,SubWhite,,0,0,0,,Ai ngờ đâu thứ khó buông nhất...
+Dialogue: 0,0:00:07.10,0:00:08.95,SubYellow,,0,0,0,,chính là CÁI ĐIỆN THOẠI!
+Dialogue: 0,0:00:09.00,0:00:11.20,SubWhite,,0,0,0,,Miệng bảo đi ngủ sớm cho đẹp da...
+Dialogue: 0,0:00:11.20,0:00:13.15,SubYellow,,0,0,0,,mà mở mắt ra là BA GIỜ SÁNG!
+Dialogue: 0,0:00:13.20,0:00:15.30,SubWhite,,0,0,0,,Còn mấy bà thì sao?
+Dialogue: 0,0:00:15.30,0:00:17.11,SubYellow,,0,0,0,,thứ khó buông nhất của mấy bà là gì?

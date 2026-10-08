@@ -65,10 +65,61 @@ def generate_top_hook_banner(out_path: Path):
     img.save(str(out_path))
     print(f"  ✓ Đã sinh Top Hook Banner: {out_path}")
 
+def generate_exclusive_clean_voice(out_wav: Path) -> float:
+    """
+    Tạo giọng nói ĐỘC QUYỀN, 100% BẢN QUYỀN SẠCH cho KOL Nhun Nhun AI.
+    Sử dụng Microsoft Azure Neural Engine (vi-VN-HoaiMyNeural) với kỹ thuật:
+    - Điều chỉnh tốc độ (rate) và cao độ (pitch) từng phân đoạn cho nhịp điệu tự nhiên, biểu cảm.
+    - Bộ lọc EQ Studio (khử chói, tăng độ ấm 200Hz, nén dynamic range) cho chất âm vlog FaceTime chân thực.
+    """
+    out_wav.parent.mkdir(parents=True, exist_ok=True)
+    temp_dir = Path("/tmp/nhunnhun_clean_voice")
+    temp_dir.mkdir(parents=True, exist_ok=True)
+
+    segments = [
+        ("seg1.mp3", "Hồi xưa á, em tưởng thứ khó buông nhất là tình cảm, chia tay là khóc mấy ngày mấy đêm!", "+18%", "+3Hz"),
+        ("seg2.mp3", "Ai ngờ đâu thứ khó buông nhất cuộc đời này... chính là cái điện thoại!", "+22%", "+4Hz"),
+        ("seg3.mp3", "Miệng thì bảo đi ngủ sớm cho đẹp da, mà mở mắt ra là ba giờ sáng!", "+20%", "+4Hz"),
+        ("seg4.mp3", "Còn mấy bà, thứ khó buông nhất của mấy bà bây giờ là cái gì?", "+15%", "+2Hz")
+    ]
+
+    concat_lines = []
+    total_dur = 0.0
+    for name, text, rate, pitch in segments:
+        p = temp_dir / name
+        cmd = [
+            "edge-tts",
+            "--voice", "vi-VN-HoaiMyNeural",
+            "--rate", rate,
+            "--pitch", pitch,
+            "--text", text,
+            "--write-media", str(p)
+        ]
+        subprocess.run(cmd, check=True)
+        dur_cmd = ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1:nokey=1", str(p)]
+        dur = float(subprocess.check_output(dur_cmd).strip())
+        concat_lines.append(f"file '{p}'")
+        total_dur += dur
+        print(f"    • Phân đoạn: {dur:.2f}s | {text}")
+
+    concat_txt = temp_dir / "voice_concat.txt"
+    concat_txt.write_text("\n".join(concat_lines) + "\n", encoding="utf-8")
+
+    # Ghép và tinh chỉnh EQ cho giọng nói ấm áp chuẩn Vlog
+    cmd_eq = [
+        "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_txt),
+        "-af", "equalizer=f=200:t=q:w=1:g=2.5,equalizer=f=3500:t=q:w=1:g=-2,acompressor=threshold=-18dB:ratio=3:attack=5:release=50",
+        str(out_wav)
+    ]
+    subprocess.run(cmd_eq, check=True, capture_output=True)
+    print(f"  ✓ Đã sinh giọng độc quyền Nhun Nhun AI ({total_dur:.2f}s): {out_wav}")
+    return total_dur
+
 def generate_master_subtitles(out_path: Path):
-    """Tạo phụ đề động ASS chuẩn nhịp từng cụm từ với màu sắc bắt mắt."""
+    """Tạo phụ đề động ASS chuẩn phong cách Reels/TikTok khớp chính xác giọng Nhun Nhun."""
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     ass_content = """[Script Info]
-Title: TikTok Viral Subtitles - KOL Nhun Nhun Master V2
+Title: Nhun Nhun AI Master Subtitles (Clean Voice)
 ScriptType: v4.00+
 WrapStyle: 0
 ScaledBorderAndShadow: yes
@@ -78,19 +129,19 @@ PlayResY: 1920
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: SubWhite,Montserrat ExtraBold,66,&H00FFFFFF,&H000000FF,&H00110500,&H80000000,-1,0,0,0,100,100,0,0,1,6,3,2,60,60,620,1
-Style: SubYellow,Montserrat ExtraBold,68,&H0000FFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,105,105,0,0,1,7,3,2,60,60,620,1
+Style: SubWhite,Montserrat ExtraBold,72,&H00FFFFFF,&H000000FF,&H00110500,&H80000000,-1,0,0,0,100,100,0,0,1,7,3,2,60,60,620,1
+Style: SubYellow,Montserrat ExtraBold,74,&H0000FFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,105,105,0,0,1,8,3,2,60,60,620,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.10,0:00:02.30,SubWhite,,0,0,0,,Hồi xưa em tưởng...
-Dialogue: 0,0:00:02.30,0:00:04.60,SubYellow,,0,0,0,,thứ khó buông bỏ nhất là tình cảm,
-Dialogue: 0,0:00:04.60,0:00:06.80,SubWhite,,0,0,0,,chia tay là khóc mấy ngày mấy đêm!
-Dialogue: 0,0:00:06.80,0:00:09.10,SubWhite,,0,0,0,,Giờ em mới nhận ra...
-Dialogue: 0,0:00:09.10,0:00:11.80,SubYellow,,0,0,0,,thứ khó buông nhất là CÁI ĐIỆN THOẠI!
-Dialogue: 0,0:00:11.80,0:00:14.20,SubYellow,,0,0,0,,Cầm vô một cái là dính tới 3 GIỜ SÁNG luôn!
-Dialogue: 0,0:00:14.20,0:00:16.20,SubWhite,,0,0,0,,Miệng nói bỏ xuống mà tay không buông được!
-Dialogue: 0,0:00:16.20,0:00:18.23,SubYellow,,0,0,0,,Còn mọi người, thứ khó buông nhất của mọi người là gì?
+Dialogue: 0,0:00:00.15,0:00:02.80,SubWhite,,0,0,0,,Hồi xưa á, em tưởng...
+Dialogue: 0,0:00:02.80,0:00:05.10,SubYellow,,0,0,0,,thứ khó buông nhất là TÌNH CẢM!
+Dialogue: 0,0:00:05.15,0:00:07.10,SubWhite,,0,0,0,,Ai ngờ đâu thứ khó buông nhất...
+Dialogue: 0,0:00:07.10,0:00:08.95,SubYellow,,0,0,0,,chính là CÁI ĐIỆN THOẠI!
+Dialogue: 0,0:00:09.00,0:00:11.20,SubWhite,,0,0,0,,Miệng bảo đi ngủ sớm cho đẹp da...
+Dialogue: 0,0:00:11.20,0:00:13.15,SubYellow,,0,0,0,,mà mở mắt ra là BA GIỜ SÁNG!
+Dialogue: 0,0:00:13.20,0:00:15.30,SubWhite,,0,0,0,,Còn mấy bà thì sao?
+Dialogue: 0,0:00:15.30,0:00:17.11,SubYellow,,0,0,0,,thứ khó buông nhất của mấy bà là gì?
 """
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(ass_content)
@@ -98,9 +149,9 @@ Dialogue: 0,0:00:16.20,0:00:18.23,SubYellow,,0,0,0,,Còn mọi người, thứ k
 
 def build_master_v2():
     print("=" * 70)
-    print("🎬 KHỞI ĐỘNG XÂY DỰNG CLIP MASTER V2 (ĐẠT CHUẨN ĐỐI THỦ TRIỆU VIEW)")
+    print("🎬 KHỞI ĐỘNG XÂY DỰNG CLIP MASTER V2 (100% SẠCH BẢN QUYỀN)")
     print("   Nhân vật: KOL Huyền Nhung (Nhun Nhun AI)")
-    print("   Tiêu chuẩn: Hook Banner + BGM Carefree + SFX Đa tầng + Punch-in Zoom")
+    print("   Tiêu chuẩn: Giọng AI Độc Quyền + Top Hook Banner + BGM Carefree + SFX + Punch-in Zoom")
     print("=" * 70)
 
     raw_dir = BASE_DIR / "assets" / "raw_video"
@@ -117,7 +168,7 @@ def build_master_v2():
     # 1. Đường dẫn tài nguyên đầu vào
     shot1 = raw_dir / "shot_01_talking_cafe.mp4"
     shot2 = raw_dir / "shot_02_holding_phone.mp4"
-    voice_track = Path("/tmp/lamna_audio.mp3")
+    voice_track = audio_dir / "nhunnhun_clean_voice.wav"
     bgm_track = Path("/root/truelearning/res/bgm/Carefree.mp3")
     sfx_sparkle = Path("/root/truelearning/res/sfx/sfx_sparkle.mp3")
     sfx_ding = Path("/root/remotion/packages/remotion-media/ding.wav")
@@ -128,46 +179,49 @@ def build_master_v2():
     ass_file = audio_dir / "nhunnhun_v2_subtitles.ass"
     output_video = final_dir / "nhunnhun_master_v2.mp4"
 
-    # Bước 1 & 2: Sinh Banner và Phụ đề
-    print("\n[BƯỚC 1/4] 🎨 Thiết kế Top Hook Banner và Phụ đề động...")
+    # Bước 1: Sinh Giọng Độc Quyền Bản Quyền Sạch
+    print("\n[BƯỚC 1/4] 🎙️ Sinh giọng nói độc quyền Nhun Nhun AI (100% sạch bản quyền)...")
+    total_dur = generate_exclusive_clean_voice(voice_track)
+
+    # Bước 2: Sinh Banner và Phụ đề
+    print("\n[BƯỚC 2/4] 🎨 Thiết kế Top Hook Banner và Phụ đề động...")
     generate_top_hook_banner(banner_png)
     generate_master_subtitles(ass_file)
 
     # Bước 3: Hậu kỳ tổng hợp với FFmpeg (Video + Punch-in Zoom + Color Grade + Audio Multi-track)
-    print("\n[BƯỚC 2/4] 🚀 Dựng đa phân cảnh, Punch-in Zoom, hòa âm BGM & SFX...")
+    print("\n[BƯỚC 3/4] 🚀 Dựng đa phân cảnh, Punch-in Zoom, hòa âm BGM & SFX...")
     banner_escaped = str(banner_png).replace("\\", "/").replace(":", "\\:")
     ass_escaped = str(ass_file).replace("\\", "/").replace(":", "\\:")
 
     # Video Timeline:
-    # 0.0s -> 4.50s: Shot 1 Cafe Normal
-    # 4.50s -> 12.50s (8.0s): Shot 2 Phone Punch-in Zoom 1.18x (scale 1274x2265 crop 1080x1920)
-    # 12.50s -> 18.23s (5.73s): Shot 1 Cafe Outro
-    # Sau đó nối 3 shot -> Chỉnh màu Warm Cafe -> Đặt Top Hook Banner -> Đốt Phụ đề ASS
+    # 0.0s -> 5.11s: Shot 1 Cafe Normal
+    # 5.11s -> 13.17s (8.06s): Shot 2 Phone Punch-in Zoom 1.18x (scale 1274x2265 crop 1080x1920)
+    # 13.17s -> 17.11s (3.94s): Shot 1 Cafe Outro
     #
     # Audio Timeline:
-    # [2] Voice track 18.23s
+    # [2] Voice track 17.11s
     # [3] BGM Carefree volume 0.16
     # [4] SFX Sparkle tại 0.1s
-    # [5] SFX Ding tại 4.5s (khi chữ CÁI ĐIỆN THOẠI bật lên)
-    # [6] SFX Ting tại 8.5s (khi 3 GIỜ SÁNG bật lên)
-    # [7] SFX Whoosh tại 14.5s (khi vào câu hỏi Outro)
+    # [5] SFX Ding tại 5.11s (khi chữ CÁI ĐIỆN THOẠI bật lên)
+    # [6] SFX Ting tại 8.97s (khi 3 GIỜ SÁNG bật lên)
+    # [7] SFX Whoosh tại 13.17s (khi vào câu hỏi Outro)
 
     filter_complex = (
         # Video streams
-        "[0:v]trim=0:4.50,setpts=PTS-STARTPTS,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920[v1];"
-        "[1:v]trim=0:8.00,setpts=PTS-STARTPTS,scale=1274:2265,crop=1080:1920[v2];"
-        "[0:v]trim=2.27:8.00,setpts=PTS-STARTPTS,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920[v3];"
+        "[0:v]trim=0:5.11,setpts=PTS-STARTPTS,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920[v1];"
+        "[1:v]trim=0:8.06,setpts=PTS-STARTPTS,scale=1274:2265,crop=1080:1920[v2];"
+        "[0:v]trim=2.00:5.94,setpts=PTS-STARTPTS,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920[v3];"
         "[v1][v2][v3]concat=n=3:v=1:a=0[vcat];"
         f"[vcat]eq=contrast=1.06:brightness=0.01:saturation=1.12:gamma_r=1.02:gamma_g=0.98:gamma_b=0.96,vignette=PI/7[vgraded];"
         f"[vgraded][8:v]overlay=0:0[vbanner];"
         f"[vbanner]ass='{ass_escaped}'[vfinal];"
         # Audio streams
-        "[2:a]volume=1.08[a_voc];"
-        "[3:a]atrim=0:18.23,asetpts=PTS-STARTPTS,volume=0.15,afade=t=in:st=0:d=0.4,afade=t=out:st=17.7:d=0.5[a_bgm];"
+        "[2:a]volume=1.15[a_voc];"
+        f"[3:a]atrim=0:{total_dur:.2f},asetpts=PTS-STARTPTS,volume=0.15,afade=t=in:st=0:d=0.4,afade=t=out:st=15.5:d=1.5[a_bgm];"
         "[4:a]adelay=100|100,volume=0.25[a_sfx1];"
-        "[5:a]adelay=4500|4500,volume=0.35[a_sfx2];"
-        "[6:a]adelay=8500|8500,volume=0.35[a_sfx3];"
-        "[7:a]adelay=14500|14500,volume=0.30[a_sfx4];"
+        "[5:a]adelay=5110|5110,volume=0.35[a_sfx2];"
+        "[6:a]adelay=8970|8970,volume=0.35[a_sfx3];"
+        "[7:a]adelay=13170|13170,volume=0.30[a_sfx4];"
         "[a_voc][a_bgm][a_sfx1][a_sfx2][a_sfx3][a_sfx4]amix=inputs=6:duration=first:dropout_transition=2[a_mix];"
         "[a_mix]loudnorm=I=-14.0:TP=-1.0:LRA=7.0[afinal]"
     )
