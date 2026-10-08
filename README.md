@@ -12,8 +12,9 @@ Hệ thống tự động hóa 100% quy trình xây dựng **KOL Ảo (Virtual I
 ## 🎬 VIDEO MASTER FINAL TẬP 01 (BROADCAST READY)
 
 > 🎥 **Video Master Final EP01 (17.12 giây — 1080x1920 24fps CFR)**: [nhunnhun_final_ep01.mp4](assets/final_videos/nhunnhun_final_ep01.mp4)  
+> 📦 **GitHub Release v1.0.0**: [https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.0.0](https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.0.0)  
+> ⬇️ **Tải Video MP4 Trực Tiếp (GitHub CDN)**: [Tải nhunnhun_final_ep01.mp4 (GitHub)](https://github.com/nguyenvutnt/nhunnhun/releases/download/v1.0.0/nhunnhun_final_ep01.mp4)  
 > 🌐 **Web Player Trực Tiếp (Xem Mọi Nơi)**: [https://directive-leadership-forest-processors.trycloudflare.com/](https://directive-leadership-forest-processors.trycloudflare.com/)  
-> ⬇️ **Tải Video MP4 Trực Tiếp (Cloudflare CDN)**: [Tải nhunnhun_final_ep01.mp4](https://directive-leadership-forest-processors.trycloudflare.com/nhunnhun_final_ep01.mp4)  
 > 🔗 **Đường dẫn Caddy CDN Vĩnh Viễn**: [https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_final_ep01.mp4](https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_final_ep01.mp4)  
 
 ### 📸 Bằng Chứng Thị Giác Thực Tế Video Master (Snapshots)
