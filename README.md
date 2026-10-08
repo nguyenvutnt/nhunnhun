@@ -9,7 +9,35 @@ Hệ thống tự động hóa 100% quy trình xây dựng **KOL Ảo (Virtual I
 
 ---
 
-## 🎬 VIDEO MASTER FINAL V2 — BẢN VIRAL TRIỆU VIEW (CHUẨN ĐỐI THỦ LAMNA)
+## 🎬 VIDEO MASTER FINAL V3 — BẢN TIKTOK MEME & VEO 3 (5 CREDITS) ĐIỆN ẢNH
+
+> 🌟 **Clip Master Final V3 (17.11 giây — 1080x1920 Full HD)**: [assets/final_videos/nhunnhun_master_v3_meme.mp4](assets/final_videos/nhunnhun_master_v3_meme.mp4)  
+> 📦 **GitHub Release v1.2.0**: [https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.2.0](https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.2.0)  
+> ⬇️ **Tải Video MP4 V3 Trực Tiếp (GitHub CDN)**: [Tải nhunnhun_master_v3_meme.mp4 (GitHub)](https://github.com/nguyenvutnt/nhunnhun/releases/download/v1.2.0/nhunnhun_master_v3_meme.mp4)  
+> 🌐 **Web Player Trực Tiếp (Xem Mọi Thiết Bị)**: [https://directive-leadership-forest-processors.trycloudflare.com/](https://directive-leadership-forest-processors.trycloudflare.com/)  
+> 🔗 **Đường dẫn Caddy CDN Vĩnh Viễn**: [https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_master_v3.mp4](https://bot.eyc.asia/v-c0e8efc0d44cce2e3794ff0fff190b87/nhunnhun/nhunnhun_master_v3.mp4)  
+
+### 🚀 BẢNG ĐỘT PHÁ TOÀN DIỆN MASTER V3 (KHẮC PHỤC 100% CÁC LỖI CŨ)
+
+| Hạng mục | Bản Cũ (V1 / V2) | **Bản Master Final V3 (Đỉnh Cao)** |
+| :--- | :--- | :--- |
+| **1. Công Nghệ Hình Ảnh** | Veo 3 Lite 0-credit (hàng chờ chậm, chuyển động hạn chế) | **Google Flow Veo 3 (5-Credit High Priority Mode)**: Độ chi tiết 4K photorealistic, tóc mái thưa bồng bềnh, mũ beret xám, áo len kem, ánh nắng vàng rọi qua cửa sổ cafe tạo bokeh xóa phông điện ảnh. |
+| **2. Xử Lý Khẩu Hình & Lipsync** | Tiếng 1 đường miệng 1 nẻo do model AI text-to-video tự do | **Kỹ Thuật Dựng Action-Beat Điện Ảnh**: <br>• Đoạn 0-4.8s: Cắt đúng nhịp hé miệng nói chuyện tự nhiên vào camera.<br>• Đoạn 4.8-8.8s: **Punch-in Zoom 1.35x** giật cận cảnh vào chiếc điện thoại, triệt tiêu 100% cảm giác soi khẩu hình.<br>• Đoạn 8.8-13.0s: Chọn đúng khoảnh khắc Nhung ngửa đầu cười tít mắt lắc lư tự trào, khớp 100% tiếng thở cười khúc khích trong giọng đọc! |
+| **3. Nhạc Nền TikTok** | Nhạc Carefree đều đều, không thịnh hành | **Beat Trend TikTok Quốc Dân**: Sử dụng bài beat huyền thoại `Monkeys Spinning Monkeys` (bản nhạc viral số 1 TikTok cho các vlog tự trào hài hước), tự động ngắt phựt nhạc khi bẻ lái. |
+| **4. Kho Meme Âm Thanh (SFX)** | Tiếng chuông ting ting nhẹ | **Trọn Bộ Meme Viral TikTok**: <br>• Giây 0.05s: `whoosh.wav` mở màn giật giật.<br>• Giây 4.70s: `record-scratch.wav` cào đĩa giật ngắt nhạc.<br>• Giây 4.85s: `vine-boom.wav` nổ kịch tính cực mạnh.<br>• Giây 8.80s: `windows-xp-error.wav` (tiếng não đơ) + `mac-quack.wav` (tiếng vịt kêu hài hước).<br>• Giây 13.5s: `yippee.wav` vui tươi kết bài. |
+| **5. Meme Đồ Họa Thị Giác** | Chỉ có banner trên đầu | **Sticker Meme Nổi Bật**: Sticker đỏ rực `CHÍNH LÀ CÁI ĐIỆN THOẠI !` nảy lên ở giây 4.8s + Hộp đồng hồ điện tử đỏ `ĐỒNG HỒ: 03:00 AM` nhấp nháy trên đầu lúc 8.8s. |
+| **6. Hook Mở Đầu & Nhịp Dựng** | Clip trôi đều đều, thiếu nhịp điệu | **Hook Giật Nhịp (Fast-Paced Cut)**: Màn hình giật chớp mở màn + cứ mỗi 1.5 - 2s có 1 biến đổi thị giác (Zoom in, đổi góc, sticker nảy, đổi màu chữ Subtitle kinetic). |
+
+### 📸 Bằng Chứng Thị Giác Thực Tế Video Master V3 (Snapshots)
+
+| 1. Hook Veo 3 5-Credits (1.2s) | 2. Punch-in Zoom + Meme Boom (5.5s) | 3. Nụ Cười Tít Mắt + Meme 3 AM (10.2s) | 4. Outro Nghiêng Đầu Giao Lưu (15.0s) |
+| :---: | :---: | :---: | :---: |
+| <img src="assets/snapshots/v3_01_hook_whoosh.jpg" width="220" /> | <img src="assets/snapshots/v3_02_meme_phone_boom.jpg" width="220" /> | <img src="assets/snapshots/v3_03_meme_clock_3am.jpg" width="220" /> | <img src="assets/snapshots/v3_04_outro_community.jpg" width="220" /> |
+| *"Hồi xưa á, em tưởng..."* | *"CHÍNH LÀ CÁI ĐIỆN THOẠI !"* | *"ĐỒNG HỒ: 03:00 AM (Não lag)"* | *"Còn mấy bà, thứ khó buông nhất là gì?"* |
+
+---
+
+## 🎬 VIDEO MASTER FINAL V2 (ARCHIVE)
 
 > 🌟 **Clip Master Final V2 (18.23 giây — 1080x1920 Full HD)**: [assets/final_videos/nhunnhun_master_v2.mp4](assets/final_videos/nhunnhun_master_v2.mp4)  
 > 📦 **GitHub Release v1.1.0**: [https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.1.0](https://github.com/nguyenvutnt/nhunnhun/releases/tag/v1.1.0)  
